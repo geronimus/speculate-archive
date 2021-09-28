@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+{{{css}}}
+    </style>
+  </head>
+  <body>
+    <div id="ui-stage">
+    </div>
+    <script="text/javascript">
+{{{js}}}
+    </script>
+  </body>
+</html>
+

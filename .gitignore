@@ -1,0 +1,14 @@
+# Compiled sources
+compiled/*
+dist/*
+
+# Node modules
+node_modules
+
+# vi / vim cruft
+*.swp
+
+# os cruft
+~*
+.DS_Store
+

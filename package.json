@@ -1,0 +1,40 @@
+{
+  "name": "speculate",
+  "version": "0.1.0",
+  "description": "A visual interface and data format for data transformations source-to-target mappings.",
+  "main": "speculate.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npm-run-all --sequential clean compile build-html",
+    "build-html": "node scripts/build-html",
+    "clean": "rimraf dist/* compiled/*",
+    "compile": "webpack",
+    "lint": "eslint src",
+    "lint:watch": "esw src --watch",
+    "test": "mocha --recursive",
+    "test:lint": "npm-run-all --parallel test lint",
+    "test~": "npm-run-all --parallel test:watch lint:watch"
+  },
+  "keywords": [
+    "source-to-target",
+    "mapping",
+    "stm",
+    "etl",
+    "elt"
+  ],
+  "author": "Geronimus (Graham Brown)",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-watch": "^7.0.0",
+    "eslint-webpack-plugin": "^3.0.1",
+    "mocha": "^9.1.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
